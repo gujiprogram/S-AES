@@ -1,0 +1,1963 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>964</width>
+    <height>651</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>0</y>
+     <width>291</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">    color: white;</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;S-AES加密系统&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>90</y>
+     <width>931</width>
+     <height>471</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="currentIndex">
+    <number>7</number>
+   </property>
+   <widget class="QWidget" name="page_16">
+    <widget class="QPushButton" name="pushButton_36">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>310</y>
+       <width>150</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>120</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">/**正常情况下样式**/
+QPushButton{
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+    background-color: transparent; /* 设置为透明 */
+    border-color: #2f3640;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+}
+
+/**鼠标停留在按钮上的样式**/
+QPushButton:hover{   
+    color: #FFFFFF;
+    background-color: #a2375a;
+    border-color: #2f3640;
+}
+
+/**鼠标按压下去的样式**/
+QPushButton:pressed, QPushButton:checked{
+    color: #FFFFFF;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0  #273c75, stop:1 #202f55);
+}
+
+/**按钮失能情况下样式**/
+QPushButton:disabled{
+    color: #FFFFFF;
+    background-color: #dcdde1;
+    border-color: #dcdde1;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>开始加密</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEdit_16">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>260</y>
+       <width>341</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: transparent; /* 设置为透明 */
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_35">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>50</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    color: white;
+font: 10pt &quot;微软雅黑&quot;;</string>
+     </property>
+     <property name="text">
+      <string>请输入密钥（16bit）：</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_34">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>50</y>
+       <width>331</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>250</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: transparent; /* 设置为透明 */
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_35">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>150</y>
+       <width>331</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>250</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: transparent; /* 设置为透明 */
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_36">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>150</y>
+       <width>181</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    color: white;
+font: 10pt &quot;微软雅黑&quot;;</string>
+     </property>
+     <property name="text">
+      <string>请输入明文（16bit）：</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_17">
+    <widget class="QLineEdit" name="lineEdit_36">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>60</y>
+       <width>361</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: transparent; /* 设置为透明 */
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_37">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>70</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    color: white;
+font: 10pt &quot;微软雅黑&quot;;</string>
+     </property>
+     <property name="text">
+      <string>请输入密钥（16bit）：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_38">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>150</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    color: white;
+font: 10pt &quot;微软雅黑&quot;;</string>
+     </property>
+     <property name="text">
+      <string>请输入明文（字符串）：</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_37">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>150</y>
+       <width>361</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: transparent; /* 设置为透明 */
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_37">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>310</y>
+       <width>150</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>120</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">/**正常情况下样式**/
+QPushButton{
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+    background-color: transparent; /* 设置为透明 */
+    border-color: #2f3640;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+}
+
+/**鼠标停留在按钮上的样式**/
+QPushButton:hover{   
+    color: #FFFFFF;
+    background-color: #a2375a;
+    border-color: #2f3640;
+}
+
+/**鼠标按压下去的样式**/
+QPushButton:pressed, QPushButton:checked{
+    color: #FFFFFF;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0  #273c75, stop:1 #202f55);
+}
+
+/**按钮失能情况下样式**/
+QPushButton:disabled{
+    color: #FFFFFF;
+    background-color: #dcdde1;
+    border-color: #dcdde1;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>开始加密</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEdit_17">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>250</y>
+       <width>361</width>
+       <height>191</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: transparent; /* 设置为透明 */
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_18">
+    <widget class="QTextEdit" name="textEdit_18">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>230</y>
+       <width>360</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: transparent; /* 设置为透明 */
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_39">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>60</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    color: white;
+font: 10pt &quot;微软雅黑&quot;;</string>
+     </property>
+     <property name="text">
+      <string>请输入密钥（16bit）：</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_38">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>300</y>
+       <width>150</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>120</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">/**正常情况下样式**/
+QPushButton{
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+    background-color: transparent; /* 设置为透明 */
+    border-color: #2f3640;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+}
+
+/**鼠标停留在按钮上的样式**/
+QPushButton:hover{   
+    color: #FFFFFF;
+    background-color: #a2375a;
+    border-color: #2f3640;
+}
+
+/**鼠标按压下去的样式**/
+QPushButton:pressed, QPushButton:checked{
+    color: #FFFFFF;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0  #273c75, stop:1 #202f55);
+}
+
+/**按钮失能情况下样式**/
+QPushButton:disabled{
+    color: #FFFFFF;
+    background-color: #dcdde1;
+    border-color: #dcdde1;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>开始解密</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_38">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>60</y>
+       <width>360</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: transparent; /* 设置为透明 */
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_40">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>150</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    color: white;
+font: 10pt &quot;微软雅黑&quot;;</string>
+     </property>
+     <property name="text">
+      <string>请输入密文（字符串）：</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_39">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>140</y>
+       <width>360</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: transparent; /* 设置为透明 */
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_19">
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>50</y>
+       <width>181</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    color: white;</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;请输入密钥（32bit）：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>60</y>
+       <width>300</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: transparent; /* 设置为透明 */
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>150</y>
+       <width>191</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    color: white;</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;请输入明文（字符串）：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_2">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>160</y>
+       <width>300</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: transparent; /* 设置为透明 */
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_4">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>310</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">/**正常情况下样式**/
+QPushButton{
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+    background-color: transparent; /* 设置为透明 */
+    border-color: #2f3640;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+}
+
+/**鼠标停留在按钮上的样式**/
+QPushButton:hover{   
+    color: #FFFFFF;
+    background-color: #a2375a;
+    border-color: #2f3640;
+}
+
+/**鼠标按压下去的样式**/
+QPushButton:pressed, QPushButton:checked{
+    color: #FFFFFF;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0  #273c75, stop:1 #202f55);
+}
+
+/**按钮失能情况下样式**/
+QPushButton:disabled{
+    color: #FFFFFF;
+    background-color: #dcdde1;
+    border-color: #dcdde1;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>开始双重加密</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEdit_19">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>240</y>
+       <width>300</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: transparent; /* 设置为透明 */
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>20</y>
+       <width>141</width>
+       <height>401</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/**正常情况下样式**/
+QPushButton{
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+    background-color: transparent; /* 设置为透明 */
+    border-color: #2f3640;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+}
+
+/**鼠标停留在按钮上的样式**/
+QPushButton:hover{   
+    color: #FFFFFF;
+    background-color: #a2375a;
+    border-color: #2f3640;
+}
+
+/**鼠标按压下去的样式**/
+QPushButton:pressed, QPushButton:checked{
+    color: #FFFFFF;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0  #273c75, stop:1 #202f55);
+}
+
+/**按钮失能情况下样式**/
+QPushButton:disabled{
+    color: #FFFFFF;
+    background-color: #dcdde1;
+    border-color: #dcdde1;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>双重加密</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/**正常情况下样式**/
+QPushButton{
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+    background-color: transparent; /* 设置为透明 */
+    border-color: #2f3640;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+}
+
+/**鼠标停留在按钮上的样式**/
+QPushButton:hover{   
+    color: #FFFFFF;
+    background-color: #a2375a;
+    border-color: #2f3640;
+}
+
+/**鼠标按压下去的样式**/
+QPushButton:pressed, QPushButton:checked{
+    color: #FFFFFF;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0  #273c75, stop:1 #202f55);
+}
+
+/**按钮失能情况下样式**/
+QPushButton:disabled{
+    color: #FFFFFF;
+    background-color: #dcdde1;
+    border-color: #dcdde1;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>中间相遇攻击</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/**正常情况下样式**/
+QPushButton{
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+    background-color: transparent; /* 设置为透明 */
+    border-color: #2f3640;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+}
+
+/**鼠标停留在按钮上的样式**/
+QPushButton:hover{   
+    color: #FFFFFF;
+    background-color: #a2375a;
+    border-color: #2f3640;
+}
+
+/**鼠标按压下去的样式**/
+QPushButton:pressed, QPushButton:checked{
+    color: #FFFFFF;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0  #273c75, stop:1 #202f55);
+}
+
+/**按钮失能情况下样式**/
+QPushButton:disabled{
+    color: #FFFFFF;
+    background-color: #dcdde1;
+    border-color: #dcdde1;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>三重加密</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_20">
+    <widget class="QLineEdit" name="lineEdit_3">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>70</y>
+       <width>300</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: transparent; /* 设置为透明 */
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>141</width>
+       <height>401</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/**正常情况下样式**/
+QPushButton{
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+    background-color: transparent; /* 设置为透明 */
+    border-color: #2f3640;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+}
+
+/**鼠标停留在按钮上的样式**/
+QPushButton:hover{   
+    color: #FFFFFF;
+    background-color: #a2375a;
+    border-color: #2f3640;
+}
+
+/**鼠标按压下去的样式**/
+QPushButton:pressed, QPushButton:checked{
+    color: #FFFFFF;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0  #273c75, stop:1 #202f55);
+}
+
+/**按钮失能情况下样式**/
+QPushButton:disabled{
+    color: #FFFFFF;
+    background-color: #dcdde1;
+    border-color: #dcdde1;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>双重加密</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_6">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/**正常情况下样式**/
+QPushButton{
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+    background-color: transparent; /* 设置为透明 */
+    border-color: #2f3640;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+}
+
+/**鼠标停留在按钮上的样式**/
+QPushButton:hover{   
+    color: #FFFFFF;
+    background-color: #a2375a;
+    border-color: #2f3640;
+}
+
+/**鼠标按压下去的样式**/
+QPushButton:pressed, QPushButton:checked{
+    color: #FFFFFF;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0  #273c75, stop:1 #202f55);
+}
+
+/**按钮失能情况下样式**/
+QPushButton:disabled{
+    color: #FFFFFF;
+    background-color: #dcdde1;
+    border-color: #dcdde1;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>中间相遇攻击</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_7">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/**正常情况下样式**/
+QPushButton{
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+    background-color: transparent; /* 设置为透明 */
+    border-color: #2f3640;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+}
+
+/**鼠标停留在按钮上的样式**/
+QPushButton:hover{   
+    color: #FFFFFF;
+    background-color: #a2375a;
+    border-color: #2f3640;
+}
+
+/**鼠标按压下去的样式**/
+QPushButton:pressed, QPushButton:checked{
+    color: #FFFFFF;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0  #273c75, stop:1 #202f55);
+}
+
+/**按钮失能情况下样式**/
+QPushButton:disabled{
+    color: #FFFFFF;
+    background-color: #dcdde1;
+    border-color: #dcdde1;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>三重加密</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>60</y>
+       <width>181</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    color: white;</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;请输入您找到的密文：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_4">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>170</y>
+       <width>300</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: transparent; /* 设置为透明 */
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEdit_20">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>250</y>
+       <width>300</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: transparent; /* 设置为透明 */
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>160</y>
+       <width>191</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    color: white;</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;请输入您找到的明文：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_8">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>320</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">/**正常情况下样式**/
+QPushButton{
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+    background-color: transparent; /* 设置为透明 */
+    border-color: #2f3640;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+}
+
+/**鼠标停留在按钮上的样式**/
+QPushButton:hover{   
+    color: #FFFFFF;
+    background-color: #a2375a;
+    border-color: #2f3640;
+}
+
+/**鼠标按压下去的样式**/
+QPushButton:pressed, QPushButton:checked{
+    color: #FFFFFF;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0  #273c75, stop:1 #202f55);
+}
+
+/**按钮失能情况下样式**/
+QPushButton:disabled{
+    color: #FFFFFF;
+    background-color: #dcdde1;
+    border-color: #dcdde1;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>开始攻击</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page">
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>60</y>
+       <width>181</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    color: white;</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;请输入密钥（32bit）：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>160</y>
+       <width>191</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    color: white;</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;请输入明文（32bit）：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_5">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>160</y>
+       <width>300</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: transparent; /* 设置为透明 */
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_9">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>310</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">/**正常情况下样式**/
+QPushButton{
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+    background-color: transparent; /* 设置为透明 */
+    border-color: #2f3640;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+}
+
+/**鼠标停留在按钮上的样式**/
+QPushButton:hover{   
+    color: #FFFFFF;
+    background-color: #a2375a;
+    border-color: #2f3640;
+}
+
+/**鼠标按压下去的样式**/
+QPushButton:pressed, QPushButton:checked{
+    color: #FFFFFF;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0  #273c75, stop:1 #202f55);
+}
+
+/**按钮失能情况下样式**/
+QPushButton:disabled{
+    color: #FFFFFF;
+    background-color: #dcdde1;
+    border-color: #dcdde1;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>开始三重加密</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_6">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>70</y>
+       <width>300</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: transparent; /* 设置为透明 */
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>141</width>
+       <height>401</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QPushButton" name="pushButton_10">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/**正常情况下样式**/
+QPushButton{
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+    background-color: transparent; /* 设置为透明 */
+    border-color: #2f3640;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+}
+
+/**鼠标停留在按钮上的样式**/
+QPushButton:hover{   
+    color: #FFFFFF;
+    background-color: #a2375a;
+    border-color: #2f3640;
+}
+
+/**鼠标按压下去的样式**/
+QPushButton:pressed, QPushButton:checked{
+    color: #FFFFFF;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0  #273c75, stop:1 #202f55);
+}
+
+/**按钮失能情况下样式**/
+QPushButton:disabled{
+    color: #FFFFFF;
+    background-color: #dcdde1;
+    border-color: #dcdde1;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>双重加密</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_11">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/**正常情况下样式**/
+QPushButton{
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+    background-color: transparent; /* 设置为透明 */
+    border-color: #2f3640;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+}
+
+/**鼠标停留在按钮上的样式**/
+QPushButton:hover{   
+    color: #FFFFFF;
+    background-color: #a2375a;
+    border-color: #2f3640;
+}
+
+/**鼠标按压下去的样式**/
+QPushButton:pressed, QPushButton:checked{
+    color: #FFFFFF;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0  #273c75, stop:1 #202f55);
+}
+
+/**按钮失能情况下样式**/
+QPushButton:disabled{
+    color: #FFFFFF;
+    background-color: #dcdde1;
+    border-color: #dcdde1;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>中间相遇攻击</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_12">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/**正常情况下样式**/
+QPushButton{
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+    background-color: transparent; /* 设置为透明 */
+    border-color: #2f3640;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+}
+
+/**鼠标停留在按钮上的样式**/
+QPushButton:hover{   
+    color: #FFFFFF;
+    background-color: #a2375a;
+    border-color: #2f3640;
+}
+
+/**鼠标按压下去的样式**/
+QPushButton:pressed, QPushButton:checked{
+    color: #FFFFFF;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0  #273c75, stop:1 #202f55);
+}
+
+/**按钮失能情况下样式**/
+QPushButton:disabled{
+    color: #FFFFFF;
+    background-color: #dcdde1;
+    border-color: #dcdde1;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>三重加密</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QTextEdit" name="textEdit_21">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>250</y>
+       <width>301</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: transparent; /* 设置为透明 */
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_2">
+    <widget class="QLabel" name="label_41">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>120</y>
+       <width>201</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    color: white;
+font: 10pt &quot;微软雅黑&quot;;</string>
+     </property>
+     <property name="text">
+      <string>请输入长明文（字符串）：</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_39">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>260</y>
+       <width>150</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>120</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">/**正常情况下样式**/
+QPushButton{
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+    background-color: transparent; /* 设置为透明 */
+    border-color: #2f3640;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+}
+
+/**鼠标停留在按钮上的样式**/
+QPushButton:hover{   
+    color: #FFFFFF;
+    background-color: #a2375a;
+    border-color: #2f3640;
+}
+
+/**鼠标按压下去的样式**/
+QPushButton:pressed, QPushButton:checked{
+    color: #FFFFFF;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0  #273c75, stop:1 #202f55);
+}
+
+/**按钮失能情况下样式**/
+QPushButton:disabled{
+    color: #FFFFFF;
+    background-color: #dcdde1;
+    border-color: #dcdde1;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>CBC模式加密</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_40">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>30</y>
+       <width>361</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: transparent; /* 设置为透明 */
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEdit_22">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>240</y>
+       <width>361</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: transparent; /* 设置为透明 */
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_42">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>40</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    color: white;
+font: 10pt &quot;微软雅黑&quot;;</string>
+     </property>
+     <property name="text">
+      <string>请输入密钥（16bit）：</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_13">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>360</y>
+       <width>150</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">/**正常情况下样式**/
+QPushButton{
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+    background-color: transparent; /* 设置为透明 */
+    border-color: #2f3640;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+}
+
+/**鼠标停留在按钮上的样式**/
+QPushButton:hover{   
+    color: #FFFFFF;
+    background-color: #a2375a;
+    border-color: #2f3640;
+}
+
+/**鼠标按压下去的样式**/
+QPushButton:pressed, QPushButton:checked{
+    color: #FFFFFF;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0  #273c75, stop:1 #202f55);
+}
+
+/**按钮失能情况下样式**/
+QPushButton:disabled{
+    color: #FFFFFF;
+    background-color: #dcdde1;
+    border-color: #dcdde1;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>解密对比</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEdit_2">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>110</y>
+       <width>361</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: transparent; /* 设置为透明 */
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_3">
+    <widget class="QLabel" name="label_43">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>20</y>
+       <width>191</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+font: 10pt &quot;微软雅黑&quot;;</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;请输入密钥（16bit）：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEdit_23">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>250</y>
+       <width>380</width>
+       <height>200</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: transparent; /* 设置为透明 */
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_43">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>10</y>
+       <width>360</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: transparent; /* 设置为透明 */
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_40">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>180</y>
+       <width>190</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>190</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">/**正常情况下样式**/
+QPushButton{
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+    background-color: transparent; /* 设置为透明 */
+    border-color: #2f3640;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+}
+
+/**鼠标停留在按钮上的样式**/
+QPushButton:hover{   
+    color: #FFFFFF;
+    background-color: #a2375a;
+    border-color: #2f3640;
+}
+
+/**鼠标按压下去的样式**/
+QPushButton:pressed, QPushButton:checked{
+    color: #FFFFFF;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0  #273c75, stop:1 #202f55);
+}
+
+/**按钮失能情况下样式**/
+QPushButton:disabled{
+    color: #FFFFFF;
+    background-color: #dcdde1;
+    border-color: #dcdde1;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>正常解密</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_44">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>90</y>
+       <width>201</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    color: white;
+font: 10pt &quot;微软雅黑&quot;;</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;请输入密文（字符串）：&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_41">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>180</y>
+       <width>191</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>120</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">/**正常情况下样式**/
+QPushButton{
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+    background-color: transparent; /* 设置为透明 */
+    border-color: #2f3640;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+}
+
+/**鼠标停留在按钮上的样式**/
+QPushButton:hover{   
+    color: #FFFFFF;
+    background-color: #a2375a;
+    border-color: #2f3640;
+}
+
+/**鼠标按压下去的样式**/
+QPushButton:pressed, QPushButton:checked{
+    color: #FFFFFF;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0  #273c75, stop:1 #202f55);
+}
+
+/**按钮失能情况下样式**/
+QPushButton:disabled{
+    color: #FFFFFF;
+    background-color: #dcdde1;
+    border-color: #dcdde1;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>修改密文分组后解密</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEdit_24">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>250</y>
+       <width>380</width>
+       <height>200</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: transparent; /* 设置为透明 */
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEdit">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>70</y>
+       <width>361</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: transparent; /* 设置为透明 */
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>580</y>
+     <width>730</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="pushButton_31">
+      <property name="minimumSize">
+       <size>
+        <width>140</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/**正常情况下样式**/
+QPushButton{
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+    background-color: transparent; /* 设置为透明 */
+    border-color: #2f3640;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+}
+
+/**鼠标停留在按钮上的样式**/
+QPushButton:hover{   
+    color: #FFFFFF;
+    background-color: #a2375a;
+    border-color: #2f3640;
+}
+
+/**鼠标按压下去的样式**/
+QPushButton:pressed, QPushButton:checked{
+    color: #FFFFFF;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0  #273c75, stop:1 #202f55);
+}
+
+/**按钮失能情况下样式**/
+QPushButton:disabled{
+    color: #FFFFFF;
+    background-color: #dcdde1;
+    border-color: #dcdde1;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>基本测试</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_32">
+      <property name="minimumSize">
+       <size>
+        <width>140</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/**正常情况下样式**/
+QPushButton{
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+    background-color: transparent; /* 设置为透明 */
+    border-color: #2f3640;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+}
+
+/**鼠标停留在按钮上的样式**/
+QPushButton:hover{   
+    color: #FFFFFF;
+    background-color: #a2375a;
+    border-color: #2f3640;
+}
+
+/**鼠标按压下去的样式**/
+QPushButton:pressed, QPushButton:checked{
+    color: #FFFFFF;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0  #273c75, stop:1 #202f55);
+}
+
+/**按钮失能情况下样式**/
+QPushButton:disabled{
+    color: #FFFFFF;
+    background-color: #dcdde1;
+    border-color: #dcdde1;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>字符串加密</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_33">
+      <property name="minimumSize">
+       <size>
+        <width>140</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/**正常情况下样式**/
+QPushButton{
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+    background-color: transparent; /* 设置为透明 */
+    border-color: #2f3640;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+}
+
+/**鼠标停留在按钮上的样式**/
+QPushButton:hover{   
+    color: #FFFFFF;
+    background-color: #a2375a;
+    border-color: #2f3640;
+}
+
+/**鼠标按压下去的样式**/
+QPushButton:pressed, QPushButton:checked{
+    color: #FFFFFF;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0  #273c75, stop:1 #202f55);
+}
+
+/**按钮失能情况下样式**/
+QPushButton:disabled{
+    color: #FFFFFF;
+    background-color: #dcdde1;
+    border-color: #dcdde1;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>字符串解密</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_35">
+      <property name="minimumSize">
+       <size>
+        <width>140</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/**正常情况下样式**/
+QPushButton{
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+    background-color: transparent; /* 设置为透明 */
+    border-color: #2f3640;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+}
+
+/**鼠标停留在按钮上的样式**/
+QPushButton:hover{   
+    color: #FFFFFF;
+    background-color: #a2375a;
+    border-color: #2f3640;
+}
+
+/**鼠标按压下去的样式**/
+QPushButton:pressed, QPushButton:checked{
+    color: #FFFFFF;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0  #273c75, stop:1 #202f55);
+}
+
+/**按钮失能情况下样式**/
+QPushButton:disabled{
+    color: #FFFFFF;
+    background-color: #dcdde1;
+    border-color: #dcdde1;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>多重加密</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_34">
+      <property name="minimumSize">
+       <size>
+        <width>140</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/**正常情况下样式**/
+QPushButton{
+    font: 10pt &quot;微软雅黑&quot;;
+    color: white;
+    background-color: transparent; /* 设置为透明 */
+    border-color: #2f3640;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+}
+
+/**鼠标停留在按钮上的样式**/
+QPushButton:hover{   
+    color: #FFFFFF;
+    background-color: #a2375a;
+    border-color: #2f3640;
+}
+
+/**鼠标按压下去的样式**/
+QPushButton:pressed, QPushButton:checked{
+    color: #FFFFFF;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0  #273c75, stop:1 #202f55);
+}
+
+/**按钮失能情况下样式**/
+QPushButton:disabled{
+    color: #FFFFFF;
+    background-color: #dcdde1;
+    border-color: #dcdde1;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>工作模式</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
